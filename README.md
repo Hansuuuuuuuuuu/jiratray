@@ -25,3 +25,4 @@ Usage of ./jiratray:
 ```./jiratray -h jira.com -x 443 -i 30 -u hansuuuuuuuuuu -p password123
 ./jiratray -h jira.com -u hansuuuuuuuuuu -p password123
 ```
+![](https://raw.githubusercontent.com/Hansuuuuuuuuuu/jiratray/master/sample.png)
