@@ -48,7 +48,7 @@ func getIcon(s string) [] byte {
 
 func getOpenIssuesCount() {
 	fmt.Println("sending req")
-	url := fmt.Sprintf("https://%s:%d/rest/api/2/search?=resolution%%20=Unresolved%%20AND%%20assignee%%20=%%20%s", host, port, user)
+	url := fmt.Sprintf("https://%s:%d/rest/api/2/search?jql=resolution%%20=Unresolved%%20AND%%20assignee%%20=%%20%s", host, port, user)
 	fmt.Println(url)
 	resp, err := http.Get(url)
 	if err != nil {
@@ -61,4 +61,3 @@ func getOpenIssuesCount() {
 func updateCount() {
 
 }
-// https://jira.corp.paymaya.com/rest/api/2/search?jql=resolution%20=%20Unresolved%20AND%20assignee%20=%20currentUser()
